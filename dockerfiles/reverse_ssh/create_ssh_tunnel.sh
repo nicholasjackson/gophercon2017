@@ -1,7 +1,7 @@
 #!/bin/bash 
 command="sshpass -p '${SERVER_PASSWORD}' \
   ssh -o StrictHostKeyChecking=no \
-  -N -R 2222:localhost:22 \
+  -N -R *:2222:localhost:22 \
   ${SERVER_USER}@${SERVER_HOST}"
 
 createTunnel() { 
