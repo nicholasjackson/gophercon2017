@@ -9,5 +9,5 @@ docker run --rm -e "SERVER_USER=[remote server ssh username]" -e "SERVER_PASSWOR
 ```
 
 ## Remote login
-Login to your remote ssh server specified in the environment variables  
-Start a tunnel session to your docker container `ssh -p 2222 sshuser@localhost` and use the password *sshpass* when prompted.
+1. Login to your remote ssh server specified in the environment variables  
+2. Start a tunnel session to your docker container `ssh -p 2222 sshuser@localhost` and use the password *sshpass* when prompted.
