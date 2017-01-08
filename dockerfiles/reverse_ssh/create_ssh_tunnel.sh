@@ -5,6 +5,7 @@ command="sshpass -p '${SERVER_PASSWORD}' \
   ${SERVER_USER}@${SERVER_HOST}"
 
 createTunnel() { 
+  /etc/init.d/ssh start
   eval ${command}
 
   if [[ $? -eq 0 ]]; then 
@@ -23,4 +24,4 @@ do
   fi
 
   sleep 60
-done
+one
