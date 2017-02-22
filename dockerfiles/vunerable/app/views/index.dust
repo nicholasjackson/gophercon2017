@@ -1,0 +1,7 @@
+<script src="/reload/reload.js"></script>
+
+{@if cond="'{name}' == 'nic'"} 
+  <div> Welcome {name} </div> 
+{:else} 
+  <div> Oh oh </div> 
+{/if}
